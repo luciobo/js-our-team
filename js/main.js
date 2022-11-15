@@ -1,3 +1,8 @@
+// recupero il div dove inserirò la mia lista di dipendenti
+const contenitoreLista = document.querySelector(".contenitore-team")
+console.log(contenitoreLista)
+
+
 // devo iniziare crenado un'array di oggetti
 
 const ilNostroTeam = [
@@ -35,6 +40,18 @@ const ilNostroTeam = [
 ]
 
 console.log(ilNostroTeam)
+// console.log(ilNostroTeam.nome)
+
+stampoIlteam()
+
+function stampoIlteam(){
+    for (let i = 0; i < ilNostroTeam.length; i++) {
+        console.log(i)
+        
+    }
+}
+
+
 
 
 
