@@ -34,7 +34,7 @@ const ilNostroTeam = [
     }
 ]
 
-
+console.log(ilNostroTeam)
 
 
 
