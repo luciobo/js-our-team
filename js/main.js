@@ -40,7 +40,11 @@ const ilNostroTeam = [
 ]
 
 console.log(ilNostroTeam)
-// console.log(ilNostroTeam.nome)
+console.log(ilNostroTeam[0].nome)
+console.log(ilNostroTeam[0].cognome)
+console.log(ilNostroTeam[0].ruoloAziendale)
+console.log(ilNostroTeam[0].foto)
+
 
 stampoIlteam()
 
