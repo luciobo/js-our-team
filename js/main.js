@@ -7,33 +7,27 @@ console.log(contenitoreLista)
 
 const ilNostroTeam = [
     {
-        nome: "Wayne",
-        cognome: "Barnett",
+        nome: "Wayne Barnett",
         ruoloAziendale: "Founder & CEO",
         foto: "wayne-barnett-founder-ceo.jpg",
     }, {
-        nome: "Angela",
-        cognome: "Caroll",
+        nome: "Angela Caroll",
         ruoloAziendale: "Chief Editor",
         foto: "angela-caroll-chief-editor.jpg",
     }, {
-        nome: "Walter",
-        cognome: "Gordon",
+        nome: "Walter Gordon",
         ruoloAziendale: "Office Manager",
         foto: "walter-gordon-office-manager.jpg",
     }, {
-        nome: "Angela",
-        cognome: "Lopez",
+        nome: "Angela Lopez",
         ruoloAziendale: "Social Media Manager",
         foto: "angela-lopez-social-media-manager.jpg",
     }, {
-        nome: "Scott",
-        cognome: "Estrada",
+        nome: "Scott Estrada",
         ruoloAziendale: "Developer",
         foto: "scott-estrada-developer.jpg",
     }, {
-        nome: "Barbara",
-        cognome: "Ramos",
+        nome: "Barbara Ramos",
         ruoloAziendale: "Graphic Designer",
         foto: "barbara-ramos-graphic-designer.jpg",
     }
@@ -52,10 +46,23 @@ function stampoIlteam(){
     for (let i = 0; i < ilNostroTeam.length; i++) {
         console.log(i)
         
+        const contPricipale = document.createElement("div");
+        contPricipale.classList.add("m-5")
+        contenitoreLista.append(contPricipale);
+
+        const contenitoreImaggini = document.createElement("img.src");
+        contenitoreImaggini.innerHTML=ilNostroTeam[i].foto;
+        contenitoreLista.append(contenitoreImaggini);
+
+        const contenitoreNome= document.createElement("h1");
+        contenitoreNome.innerHTML=ilNostroTeam[i].nome;
+        contenitoreLista.append(contenitoreNome);
+
+        const contenitoreRuolo = document.createElement("h4");
+        contenitoreRuolo.innerHTML=ilNostroTeam[i].ruoloAziendale;
+        contenitoreLista.append(contenitoreRuolo);
     }
 }
-
-
 
 
 
@@ -67,3 +74,10 @@ function stampoIlteam(){
 // Angela Lopez	Social Media Manager	angela-lopez-social-media-manager.jpg
 // Scott Estrada	Developer	            scott-estrada-developer.jpg
 // Barbara Ramos	Graphic Designer	    barbara-ramos-graphic-designer.jpg
+
+
+// A partire da un array di stringhe, crea un secondo array formattando le stringhe del primo array in minuscolo e
+//       con l’iniziale maiuscola.
+
+
+
